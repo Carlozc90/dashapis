@@ -1,0 +1,23 @@
+.Header {
+  background-color: aqua;
+  height: 10vh;
+  width: 100%;
+}
+
+.SideBar {
+  background-color: red;
+  height: 90vh;
+}
+
+.main {
+  width: 80%;
+  background-color: blueviolet;
+}
+
+.aside {
+  width: 20%;
+}
+
+.containerMain {
+  display: flex;
+}
