@@ -1,15 +1,31 @@
 :root {
   --color-azulOscuro: #0d2235;
+  --color-azulBase: #0ea5e9;
+  --color-blacoCard: #eeeeee;
+
+  --color-negroBase: #121010;
+  --color-blancoBaso: #ede6db;
+  --color-verdeBase: #417d7a;
+  --color-verdeMedio: #1d5c63;
+  --color-verdeOscuro: #1a3c40;
 }
 
 .Header {
-  background-color: aqua;
+  background-color: var(--color-verdeMedio);
   height: 10vh;
   width: 100%;
+  border-bottom: 1rem solid var(--color-verdeOscuro);
+  color: var(--color-negroBase);
+  font-size: 2.3rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .SideBar {
-  background-color: red;
+  background-color: var(--color-verdeMedio);
   height: 90vh;
 }
 
@@ -18,7 +34,7 @@
   /* background-color: blueviolet; */
   height: 90vh;
   overflow-y: scroll;
-  background-color: var(--color-azulOscuro);
+  background-color: var(--color-blancoBaso);
 }
 
 .aside {
@@ -35,24 +51,28 @@ button {
   background: none;
   cursor: pointer;
   /* color: white; */
-  color: black;
+  color: var(--color-negroBase);
   width: auto;
 }
 
 .SideBar__Container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  /* gap: 2rem; */
 }
 
 .SideBar__Container--Boton {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  width: 100%;
   gap: 0.6rem;
+  padding-left: 1.5rem;
+  border-bottom: 1px solid var(--color-verdeOscuro);
+}
+
+.Sidebar__Container-bg {
+  background-color: var(--color-verdeBase);
 }
 
 .Sidebar__P {
@@ -70,27 +90,48 @@ button {
   gap: 2rem;
   justify-items: center;
   align-items: center;
-  background-color: aquamarine;
 }
 
 .DashBoard__Card {
-  background-color: red;
-  text-align: center;
+  background-color: var(--color-verdeBase);
+  border-radius: 1rem;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 35vh;
+  height: 30vh;
+}
+
+.DashBoard__Parrafo {
+  margin: 1.4rem 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-negroBase);
+}
+
+.DashBoard__Card--img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.DashBoard__Imagen {
+  position: relative;
+  object-fit: contain;
 }
 
 .Cryto {
   width: 100%;
-  /* height: 90vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--color-negroBase);
 }
 
 .Cryto__container {
-  /* background-color: aqua; */
-  /* height: 100%; */
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -108,7 +149,7 @@ button {
   font-size: 24px;
   display: block;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   margin: 15px 0;
 }
 
@@ -149,7 +190,69 @@ button {
 }
 
 .Cryto__Result--p {
-  color: #fff;
   font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.Clima {
+  /* background-color: var(--color-verdeBase); */
+  color: --;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Clima__img {
+  /* margin: 5rem 0; */
+}
+
+.Clima__container {
+  margin: 5rem 0;
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+
+  /* background-color: var(--color-blacoCard); */
+}
+
+.Clima__Label {
+  font-size: 24px;
+  display: block;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.Clima__Select {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Clima__boton {
+  background: #9497ff;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.Clima__boton:hover {
+  background-color: #7a7dfe;
+  cursor: pointer;
+}
+
+.Clima__Parrafo {
   font-weight: 500;
 }

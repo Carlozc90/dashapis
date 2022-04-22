@@ -8,4 +8,6 @@ const monedas = [
   { id: "VEN", nombre: "Bolivar Venezuela" },
 ];
 
-export { monedas };
+const pais = [{ id: "USD", nombre: "Estados Unidos" }];
+
+export { monedas, pais };

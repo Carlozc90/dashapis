@@ -1,19 +1,15 @@
 import { createContext, useEffect, useState } from "react";
-import { axiosCrytoResp } from "../helpers/Axios";
+import { apis as obj } from "../data/apis";
+import { axiosClimaResp, axiosCrytoResp } from "../helpers/Axios";
 
 const ApisContext = createContext();
-const obj = [
-  {
-    titulo: "CrytoApi",
-    img: "/assets/cripto.avif",
-    descripcion: "Api de Cryptomonedas",
-  },
-];
 
 const ApisProvider = ({ children }) => {
-  const [apis, setApis] = useState(1);
+  const [apis, setApis] = useState("");
   const [monedas, setMonedas] = useState({});
+
   const [cryptoRes, setCryptoRes] = useState({});
+  const [climaRes, setClimaRes] = useState({});
 
   useEffect(() => {
     if (Object.keys(monedas).length > 0) {
@@ -21,8 +17,24 @@ const ApisProvider = ({ children }) => {
     }
   }, [monedas]);
 
+  const handleClima = (pais, ciudad) => {
+    console.log("click");
+
+    axiosClimaResp(pais, ciudad, setClimaRes);
+  };
+
   return (
-    <ApisContext.Provider value={{ obj, apis, setMonedas, cryptoRes }}>
+    <ApisContext.Provider
+      value={{
+        obj,
+        apis,
+        setApis,
+        setMonedas,
+        cryptoRes,
+        climaRes,
+        handleClima,
+      }}
+    >
       {children}
     </ApisContext.Provider>
   );

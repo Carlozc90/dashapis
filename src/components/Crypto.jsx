@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { monedas } from "../data/monedas";
+import { monedas } from "../data/base";
 import { axiosCryptoConsulta } from "../helpers/Axios";
 import useApis from "../hooks/useApis";
 import useCryptoMoneda from "../hooks/useCryptoMoneda";
