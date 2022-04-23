@@ -51,24 +51,13 @@ export const axiosClimaResp = async (pais, ciudad, setClimaRes) => {
   }
 };
 
-// const consultarClima = async (datos) => {
-//   try {
-//     const { ciudad, pais } = datos;
+export const axiosNoticiaResp = async (pais, categoria, setNoticiaRes) => {
+  try {
+    const url = `https://newsapi.org/v2/top-headlines?country=${pais}&category=${categoria}&apiKey=${process.env.NEXT_PUBLIC_NOTICIA}`;
+    const { data } = await axios(url);
 
-//     const appId = import.meta.env.VITE_API_KEY;
-
-//     const url = `http://api.openweathermap.org/geo/1.0/direct?q=${ciudad},${pais}&limit=1&appid=${appId}`;
-
-//     setLoandig(true);
-//     const { data } = await axios(url);
-//     const { lat, lon } = data[0];
-
-//     const urlClima = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${appId}`;
-
-//     const { data: clima } = await axios(urlClima);
-//     setLoandig(false);
-//     setResultado(clima);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// };
+    setNoticiaRes(data.articles);
+  } catch (error) {
+    console.log(error.response);
+  }
+};

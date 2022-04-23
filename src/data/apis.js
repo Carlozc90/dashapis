@@ -11,6 +11,12 @@ const apis = [
     img: "/assets/bgClima.png",
     descripcion: "Api de Clima",
   },
+  {
+    titulo: "NoticiaApi",
+    id: "noticia",
+    img: "/assets/bgNews.png",
+    descripcion: "Api de Noticias",
+  },
 ];
 
 export { apis };

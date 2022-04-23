@@ -33,7 +33,6 @@ const Clima = () => {
                 className="Clima__Select"
                 onChange={(e) => setPais(e.target.value)}
               >
-                {console.log(pais)}
                 <option>--Seleccion--</option>
                 {pais.map((items, i) => (
                   <option key={i} value={items.id}>

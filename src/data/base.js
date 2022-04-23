@@ -10,4 +10,24 @@ const monedas = [
 
 const pais = [{ id: "USD", nombre: "Estados Unidos" }];
 
-export { monedas, pais };
+const noticiasPais = [
+  { id: "us", nombre: "Estados Unidos" },
+  { id: "ar", nombre: "Argentina" },
+  { id: "co", nombre: "Colombia" },
+  { id: "mx", nombre: "Mexico" },
+  { id: "ve", nombre: "Venezuela" },
+  { id: "br", nombre: "Brasil" },
+  { id: "fr", nombre: "Francia" },
+];
+
+const noticiasCategoria = [
+  { id: "general", nombre: "General" },
+  { id: "business", nombre: "Negocios" },
+  { id: "entertainment", nombre: "Entretenimiento" },
+  { id: "health", nombre: "Salud" },
+  { id: "science", nombre: "Ciencia" },
+  { id: "sports", nombre: "Deportes" },
+  { id: "technology", nombre: "Tecnología" },
+];
+
+export { monedas, pais, noticiasPais, noticiasCategoria };
