@@ -1,3 +1,4 @@
+import Bebidas from "../src/components/Bebidas";
 import Clima from "../src/components/Clima";
 import Crypto from "../src/components/Crypto";
 import DashBoard from "../src/components/DashBoard";
@@ -17,6 +18,7 @@ export default function Home() {
           cryto: <Crypto />,
           clima: <Clima />,
           noticia: <Noticias />,
+          bebida: <Bebidas />,
         }[apis]
       }
     </Layout>

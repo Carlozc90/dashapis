@@ -17,6 +17,12 @@ const apis = [
     img: "/assets/bgNews.png",
     descripcion: "Api de Noticias",
   },
+  {
+    titulo: "BebidasApi",
+    id: "bebida",
+    img: "/assets/bgBebida.png",
+    descripcion: "Api de Bebidas",
+  },
 ];
 
 export { apis };

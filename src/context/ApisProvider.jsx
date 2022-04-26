@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react";
 import { apis as obj } from "../data/apis";
 import {
+  axiosBebidaRes,
   axiosClimaResp,
   axiosCrytoResp,
   axiosNoticiaResp,
@@ -21,6 +22,9 @@ const ApisProvider = ({ children }) => {
   // Noticias
   const [noticiaRes, setNoticiaRes] = useState({});
 
+  // Bebidas
+  const [bebidaRes, setBebidaRes] = useState({});
+
   // Effect
   useEffect(() => {
     if (Object.keys(monedas).length > 0) {
@@ -36,6 +40,11 @@ const ApisProvider = ({ children }) => {
   const handleNoticia = (pais, genero) => {
     axiosNoticiaResp(pais, genero, setNoticiaRes);
   };
+
+  const handleBebida = (bebida, categoria) => {
+    axiosBebidaRes(bebida, categoria, setBebidaRes);
+  };
+
   return (
     <ApisContext.Provider
       value={{
@@ -46,8 +55,10 @@ const ApisProvider = ({ children }) => {
         cryptoRes,
         climaRes,
         noticiaRes,
+        bebidaRes,
         handleClima,
         handleNoticia,
+        handleBebida,
       }}
     >
       {children}

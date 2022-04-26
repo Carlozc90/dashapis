@@ -4,18 +4,31 @@
   --color-blacoCard: #eeeeee;
 
   --color-negroBase: #121010;
+  --color-blancoBaso: #ffffff;
+  --color-grisBase: #d9d9d9;
+  --color-verdeBase: #9caea9;
+  --color-verdeMedio: #353535;
+  --color-verdeOscuro: #284b63;
+
+  --color-grisbase1: #38302e;
+  --color-grisbase2: #6f6866;
+  --color-grisbase3: #788585;
+  --color-grisbase4: #9caea9;
+  --color-grisbase5: #ccdad1;
+
+  /* --color-negroBase: #121010;
   --color-blancoBaso: #ede6db;
   --color-verdeBase: #417d7a;
   --color-verdeMedio: #1d5c63;
-  --color-verdeOscuro: #1a3c40;
+  --color-verdeOscuro: #1a3c40; */
 }
 
 .Header {
   background-color: var(--color-verdeMedio);
   height: 10vh;
   width: 100%;
-  border-bottom: 1rem solid var(--color-verdeOscuro);
-  color: var(--color-negroBase);
+  border-bottom: 1rem solid var(--color-grisbase3);
+  color: var(--color-grisBase);
   font-size: 2.3rem;
   font-weight: 700;
 
@@ -25,7 +38,7 @@
 }
 
 .SideBar {
-  background-color: var(--color-verdeMedio);
+  background-color: var(--color-grisbase3);
   height: 90vh;
 }
 
@@ -34,7 +47,7 @@
   /* background-color: blueviolet; */
   height: 90vh;
   overflow-y: scroll;
-  background-color: var(--color-blancoBaso);
+  background-color: var(--color-grisBase);
 }
 
 .aside {
@@ -79,6 +92,7 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.2rem;
+  /* color: var(--color-grisBase); */
 }
 
 .DashBoard {
@@ -120,6 +134,78 @@ button {
 .DashBoard__Imagen {
   position: relative;
   object-fit: contain;
+}
+
+.Home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.Home__Container {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  /* row-gap: 20rem; */
+  align-items: center;
+  justify-content: center;
+  /* background-color: rebeccapurple; */
+}
+
+.Home__Izquierda {
+  width: 60%;
+}
+
+.Home__Izquierda h1 {
+  color: var(--color-azulOscuro);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.Home__Izquierda p {
+  color: var(--color-azulOscuro);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.Home__Izquierda span {
+  color: #0ea5e9;
+}
+
+.Home__Derecho {
+  width: 40%;
+}
+
+.Home__Derecho--Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  /* gap: 2rem; */
+}
+
+.Home__Derecho--Grid:hover {
+  cursor: pointer;
+}
+
+.Home__imagen {
+  /* background-color: #0d2235; */
+  width: 70%;
+  /* height: 20vh; */
+
+  /* position: relative; */
+}
+
+.Home__Descripcion {
+  margin-top: 3rem;
+  text-align: end;
+}
+
+.Home__copy {
+}
+
+.Home__Link {
+  /* text-align: end; */
 }
 
 .Cryto {
@@ -339,4 +425,56 @@ button {
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.Bebida {
+  /* background-color: #0d2235; */
+  color: var(--color-negroBase);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Boticia__container {
+  width: 90%;
+}
+
+.Bebida__Selectores {
+  /* background-color: #0ea5e9; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: flex-end;
+}
+
+.Bebida__Label {
+  font-size: 1.2rem;
+  display: block;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.Bebida__Select {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Bebida__Container--card {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.Bebida__Card {
+  background-color: #fff;
+  border-radius: 1rem;
+  height: auto;
+  width: 40vh;
+  display: flex;
+  flex-direction: column;
 }

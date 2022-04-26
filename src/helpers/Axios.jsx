@@ -61,3 +61,24 @@ export const axiosNoticiaResp = async (pais, categoria, setNoticiaRes) => {
     console.log(error.response);
   }
 };
+
+export const axiosBebidaCategoriaRes = async (setCategorias) => {
+  try {
+    const url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list";
+    const { data } = await axios(url);
+
+    setCategorias(data.drinks);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const axiosBebidaRes = async (bebida, categoria, setBebidaRes) => {
+  try {
+    const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${bebida}&c=${categoria}`;
+    const { data } = await axios(url);
+    setBebidaRes(data.drinks);
+  } catch (error) {
+    console.log(error);
+  }
+};
