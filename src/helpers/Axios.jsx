@@ -82,3 +82,46 @@ export const axiosBebidaRes = async (bebida, categoria, setBebidaRes) => {
     console.log(error);
   }
 };
+
+export const axiosPokemonesRes = async (
+  setPokemonesRes,
+  limit = 25,
+  offset = 0,
+  setTotal
+) => {
+  try {
+    const url = `https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`;
+    const { data } = await axios(url);
+
+    const promesa = data.results.map(async (items) => {
+      return await axiosPokemonData(items.url);
+    });
+    const res = await Promise.all(promesa);
+
+    setPokemonesRes(res);
+    setTotal(Math.ceil(data.count / limit));
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const axiosPokemonData = async (pokemon) => {
+  try {
+    const url = `${pokemon}`;
+    const { data } = await axios(url);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export const axiosPokemonRes = async (pokemon, setPokemonesRes) => {
+  try {
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+    const { data } = await axios(url);
+    setPokemonesRes([data]);
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+};

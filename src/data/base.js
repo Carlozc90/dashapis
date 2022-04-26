@@ -30,4 +30,25 @@ const noticiasCategoria = [
   { id: "technology", nombre: "Tecnología" },
 ];
 
-export { monedas, pais, noticiasPais, noticiasCategoria };
+const pokemonTypeColor = [
+  { id: "bug", bg: "/assets/pokemon/Bug.jpg", color: "#A6B91A" },
+  { id: "dark", bg: "/assets/pokemon/Dark.jpg", color: "#705746" },
+  { id: "dragon", bg: "/assets/pokemon/Dragon.jpg", color: "#6F35FC" },
+  { id: "electric", bg: "/assets/pokemon/Electric.jpg", color: "#F7D02C" },
+  { id: "fairy", bg: "/assets/pokemon/Fairy.jpg", color: "#D685AD" },
+  { id: "fighting", bg: "/assets/pokemon/Fighting.jpg", color: "#C22E28" },
+  { id: "fire", bg: "/assets/pokemon/Fire.jpg", color: "#EE8130" },
+  { id: "flying", bg: "/assets/pokemon/Flying.jpg", color: "#C22E28" },
+  { id: "ghost", bg: "/assets/pokemon/Ghost.jpg", color: "#735797" },
+  { id: "grass", bg: "/assets/pokemon/Grass.jpg", color: "#7AC74C" },
+  { id: "ground", bg: "/assets/pokemon/Ground.jpg", color: "#E2BF65" },
+  { id: "ice", bg: "/assets/pokemon/Ice.jpg", color: "#96D9D6" },
+  { id: "normal", bg: "/assets/pokemon/Normal.jpg", color: "#A8A77A" },
+  { id: "poison", bg: "/assets/pokemon/Poison.jpg", color: "#A33EA1" },
+  { id: "psychic", bg: "/assets/pokemon/Psychic.jpg", color: "#F95587" },
+  { id: "rock", bg: "/assets/pokemon/Rock.jpg", color: "#B6A136" },
+  { id: "steel", bg: "/assets/pokemon/Steel.jpg", color: "#B7B7CE" },
+  { id: "water", bg: "/assets/pokemon/Water.jpg", color: "#6390F0" },
+];
+
+export { monedas, pais, noticiasPais, noticiasCategoria, pokemonTypeColor };

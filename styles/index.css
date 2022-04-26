@@ -181,7 +181,7 @@ button {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  /* gap: 2rem; */
+  gap: 2rem;
 }
 
 .Home__Derecho--Grid:hover {
@@ -477,4 +477,136 @@ button {
   width: 40vh;
   display: flex;
   flex-direction: column;
+}
+
+.Poke {
+  /* background-color: #0ea5e9; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+}
+
+.Poke__container {
+  width: 90%;
+  /* background-color: #163857; */
+}
+
+.Poke__imagen {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.PokeCard__ID {
+  margin: 0;
+  margin: 0.2rem 1rem;
+  text-align: left;
+}
+
+.PokeCard__titulo {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.Poke__Form {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.Poke__Input {
+  /* width: 100%; */
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Poke__boton {
+  background: #9497ff;
+  /* width: 70%; */
+  padding: 10px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  /* margin-top: 20px; */
+}
+
+.Poke__boton:hover {
+  background-color: #7a7dfe;
+  cursor: pointer;
+}
+
+.Poke__Container--Grid {
+  /* background-color: #0ea5e9; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.PokeCard {
+  background-color: #fff;
+  width: 40vh;
+  height: 60vh;
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.75);
+}
+
+.PokeCard__img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem 0;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.Poke__Paginacion {
+  display: flex;
+}
+
+.Poke__Paginacion p {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.PokeCard__titulo::first-letter {
+  text-transform: uppercase;
+}
+
+.PokeCard__statusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.PokeCard__statusGrid p {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.PokeCard__statusGrid span {
+  font-weight: 700;
+  display: block;
+}
+
+.PokeCard__type {
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: #0d2235; */
+}
+
+.PokeCard__typeBoton {
+  background-color: #0ea5e9;
+  padding: 0.4rem 1rem;
+  border: 3px solid var(--color-grisbase3);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
 }

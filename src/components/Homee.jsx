@@ -23,16 +23,18 @@ const Homee = () => {
             }}
             className="Home__Derecho--Grid"
           >
-            {["coin", "weather", "news", "cocktail"].map((items, i) => (
-              <div className="Home__imagen" key={i}>
-                <Image
-                  src={`/assets/icon/${items}.png`}
-                  width={900}
-                  height={900}
-                  alt="imagen crypto"
-                />
-              </div>
-            ))}
+            {["coin", "weather", "news", "cocktail", "pokemon"].map(
+              (items, i) => (
+                <div className="Home__imagen" key={i}>
+                  <Image
+                    src={`/assets/icon/${items}.png`}
+                    width={900}
+                    height={900}
+                    alt="imagen crypto"
+                  />
+                </div>
+              )
+            )}
           </div>
           <div className="Home__Descripcion">
             <p>Contáctame si quieres que trabajemos juntos.</p>

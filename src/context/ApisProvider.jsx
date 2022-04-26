@@ -10,7 +10,7 @@ import {
 const ApisContext = createContext();
 
 const ApisProvider = ({ children }) => {
-  const [apis, setApis] = useState("");
+  const [apis, setApis] = useState("home");
 
   // Cryptomonedas
   const [monedas, setMonedas] = useState({});

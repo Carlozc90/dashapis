@@ -23,6 +23,12 @@ const apis = [
     img: "/assets/bgBebida.png",
     descripcion: "Api de Bebidas",
   },
+  {
+    titulo: "PokemonApi",
+    id: "pokemon",
+    img: "/assets/pokemon.png",
+    descripcion: "Api de Pokemon",
+  },
 ];
 
 export { apis };
