@@ -17,8 +17,6 @@ const DashBoard = () => {
           <div className="DashBoard__Card--img">
             <Image
               src={items.img}
-              // width={150}
-              // height={150}
               layout="fill"
               alt={`imagen ${items.titulo}`}
               className="DashBoard__Imagen"

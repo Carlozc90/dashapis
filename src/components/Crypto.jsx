@@ -43,8 +43,8 @@ const Crypto = () => {
         <div className="Cryto__container--img">
           <Image
             src={"/assets/bgCrypto1.png"}
-            width={600}
-            height={300}
+            width={600 / 1.5}
+            height={300 / 1.5}
             alt="imagen crypto"
           />
         </div>

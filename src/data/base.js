@@ -8,7 +8,15 @@ const monedas = [
   { id: "VEN", nombre: "Bolivar Venezuela" },
 ];
 
-const pais = [{ id: "USD", nombre: "Estados Unidos" }];
+const pais = [
+  { id: "ARS", nombre: "Argentina" },
+  { id: "COP", nombre: "Colombia" },
+  { id: "CLP", nombre: "Chile" },
+  { id: "USD", nombre: "Estados Unidos" },
+  { id: "PEN", nombre: "Peru" },
+  { id: "MXN", nombre: "Mexico" },
+  { id: "VEN", nombre: "Venezuela" },
+];
 
 const noticiasPais = [
   { id: "us", nombre: "Estados Unidos" },

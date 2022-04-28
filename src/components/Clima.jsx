@@ -86,8 +86,8 @@ const Clima = () => {
       <div className="Clima__img">
         <Image
           src={"/assets/bgClima.png"}
-          width={300}
-          height={300}
+          width={300 / 1.5}
+          height={300 / 1.5}
           alt="imagen clima"
         />
       </div>

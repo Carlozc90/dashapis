@@ -5,7 +5,7 @@ const SideBar = () => {
   return (
     <div className="SideBar">
       <div className={`SideBar__Container `}>
-        {obj.map((items) => {})}
+        {obj.map(() => {})}
         <button
           onClick={() => {
             setApis("home");
@@ -33,6 +33,7 @@ const SideBar = () => {
           </svg>
           <p className="Sidebar__P">HOME</p>
         </button>
+
         <button
           onClick={() => {
             setApis("dash");
@@ -61,6 +62,33 @@ const SideBar = () => {
             <line x1="17" y1="4" x2="17" y2="10" />
           </svg>
           <p className="Sidebar__P">dashboard</p>
+        </button>
+        <button
+          onClick={() => {
+            setApis("info");
+          }}
+          className={`SideBar__Container--Boton ${
+            apis === "info" && "Sidebar__Container-bg"
+          }`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-info-square"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="#000000"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="12" y1="8" x2="12.01" y2="8" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <polyline points="11 12 12 12 12 16 13 16" />
+          </svg>
+          <p className="Sidebar__P">Info</p>
         </button>
       </div>
     </div>

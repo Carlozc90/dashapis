@@ -107,7 +107,7 @@ button {
 }
 
 .DashBoard__Card {
-  background-color: var(--color-verdeBase);
+  background-color: #bcd1cb;
   border-radius: 1rem;
   /* text-align: center; */
   display: flex;
@@ -127,9 +127,11 @@ button {
 }
 
 .DashBoard__Card--img {
-  height: 100%;
-  width: 100%;
+  height: 60%;
+  width: 60%;
   position: relative;
+  /* background-color: #0d2235; */
+  margin-bottom: 1rem;
 }
 .DashBoard__Imagen {
   position: relative;
@@ -609,4 +611,76 @@ button {
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.Info {
+  width: 100%;
+  height: 100%;
+  /* background-color: #0ea5e9; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Info__container {
+  /* background-color: #284b63; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.Info__Link {
+  display: grid;
+  /* grid-template-rows: 2, 1fr; */
+
+  grid-template-columns: repeat(2, 1fr);
+  width: 80%;
+
+  /* align-items: center; */
+  padding-top: 1rem;
+  gap: 1rem;
+}
+.Info__Link p {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+/* CSS */
+.button-81 {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a !important;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.6rem 1.6rem;
+  text-align: center;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+.button-81:hover a {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    /* padding: 1rem 2rem; */
+  }
 }

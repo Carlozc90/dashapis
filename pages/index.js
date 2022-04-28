@@ -3,6 +3,7 @@ import Clima from "../src/components/Clima";
 import Crypto from "../src/components/Crypto";
 import DashBoard from "../src/components/DashBoard";
 import Homee from "../src/components/Homee";
+import Info from "../src/components/Info";
 import Noticias from "../src/components/Noticias";
 import Pokedex from "../src/components/Pokedex";
 import useApis from "../src/hooks/useApis";
@@ -16,6 +17,7 @@ export default function Home() {
         {
           home: <Homee />,
           dash: <DashBoard />,
+          info: <Info />,
           cryto: <Crypto />,
           clima: <Clima />,
           noticia: <Noticias />,
