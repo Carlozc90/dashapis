@@ -68,11 +68,6 @@ const Bebidas = () => {
             bebidaRes.map((items, i) => (
               <div className="Bebida__Card" key={i}>
                 {items.strDrinkThumb && (
-                  // <img
-                  //   src={items.strDrinkThumb}
-                  //   alt={`imagen de la noticia ${items.strDrink}`}
-                  //   className="Noticias__img"
-                  // />
                   <Image
                     src={items.strDrinkThumb}
                     width={500}

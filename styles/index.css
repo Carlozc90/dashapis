@@ -23,6 +23,131 @@
   --color-verdeOscuro: #1a3c40; */
 }
 
+@media (max-width: 900px) {
+  .button-81 {
+    font-size: 1.125rem;
+    /* padding: 1rem 2rem; */
+  }
+
+  .SideBar {
+    display: none;
+  }
+
+  .aside {
+    width: 0 !important;
+  }
+
+  .main {
+    width: 100% !important;
+  }
+
+  .Home__Container {
+    flex-direction: column !important;
+    margin-top: 15vh;
+  }
+
+  .Home__Izquierda {
+    width: 100% !important;
+  }
+  .Home__Descripcion {
+    text-align: center !important;
+  }
+  .Header {
+    display: flex !important;
+    justify-content: space-around !important ;
+  }
+
+  .DashBoard {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .Clima__container {
+    flex-direction: column;
+  }
+
+  .Cryto__container {
+    flex-direction: column;
+  }
+
+  .Cryto__container--img {
+    width: 90% !important;
+  }
+  .Cryto__container--info {
+    width: 90% !important;
+  }
+
+  .Noticias__Selectores {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .Noticias__Container--card {
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-items: center;
+  }
+
+  .Bebida__Selectores {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .Bebida__Container--card {
+    grid-template-columns: repeat(1, 1fr) !important;
+    justify-items: center;
+  }
+
+  .Poke__Form {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .Poke__Container--Grid {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+@media (min-width: 900px) {
+  .Header button {
+    display: none;
+  }
+}
+
+.Modal {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--color-grisbase4);
+  opacity: 0.96;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.overlay__boton {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  line-height: 4rem;
+  color: white !important;
+}
+
+.overlay__boton--X {
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  color: white !important;
+}
+
 .Header {
   background-color: var(--color-verdeMedio);
   height: 10vh;
@@ -201,13 +326,6 @@ button {
 .Home__Descripcion {
   margin-top: 3rem;
   text-align: end;
-}
-
-.Home__copy {
-}
-
-.Home__Link {
-  /* text-align: end; */
 }
 
 .Cryto {
@@ -554,7 +672,7 @@ button {
 .PokeCard {
   background-color: #fff;
   width: 40vh;
-  height: 60vh;
+  height: 70vh;
   text-align: center;
   border-radius: 2rem;
   box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.75);
