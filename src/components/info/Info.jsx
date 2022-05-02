@@ -1,11 +1,8 @@
-import NewsletterSubscribe from "./NewsletterSubscribe";
+import NewsletterSubscribe from "../mailchimp/sinback/NewsletterSubscribe";
 
 const Info = () => {
   return (
     <>
-      <div className="Info__Suscribe">
-        <NewsletterSubscribe />
-      </div>
       <div className="Info">
         <div className="Info__container">
           <h3>Para mas informacion</h3>

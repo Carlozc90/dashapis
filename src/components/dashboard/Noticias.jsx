@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { noticiasCategoria, noticiasPais } from "../data/base";
-import useApis from "../hooks/useApis";
+import { noticiasCategoria, noticiasPais } from "../../data/base";
+import useApis from "../../hooks/useApis";
 
 const Noticias = () => {
   const { handleNoticia, noticiaRes } = useApis();

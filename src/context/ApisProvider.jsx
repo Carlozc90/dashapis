@@ -11,6 +11,7 @@ const ApisContext = createContext();
 
 const ApisProvider = ({ children }) => {
   const [apis, setApis] = useState("home");
+  const [mensaje, setMensaje] = useState("");
 
   // Cryptomonedas
   const [monedas, setMonedas] = useState({});
@@ -59,6 +60,8 @@ const ApisProvider = ({ children }) => {
         handleClima,
         handleNoticia,
         handleBebida,
+        mensaje,
+        setMensaje,
       }}
     >
       {children}

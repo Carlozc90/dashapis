@@ -1,5 +1,5 @@
 import Image from "next/image";
-import useApis from "../hooks/useApis";
+import useApis from "../../hooks/useApis";
 
 const Homee = () => {
   const { setApis } = useApis();

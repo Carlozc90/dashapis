@@ -32,6 +32,7 @@ const NewsletterForm = ({ status, message, onValidated }) => {
 
   return (
     <form>
+      <h3>MailChimp sin BackEnd Embed Form</h3>
       <label>Subscribe to NewsLetter</label>
       <input
         onChange={(event) => setEmail(event?.target?.value ?? "")}

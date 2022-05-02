@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
-import { pais } from "../data/base";
-import useApis from "../hooks/useApis";
+import { pais } from "../../data/base";
+import useApis from "../../hooks/useApis";
 
 const Clima = () => {
   const { handleClima, climaRes } = useApis();

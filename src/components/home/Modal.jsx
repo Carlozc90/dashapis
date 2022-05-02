@@ -1,4 +1,4 @@
-import useApis from "../hooks/useApis";
+import useApis from "../../hooks/useApis";
 
 const Modal = ({ setModal, modal }) => {
   const { setApis } = useApis();

@@ -33,7 +33,6 @@ const SideBar = () => {
           </svg>
           <p className="Sidebar__P">HOME</p>
         </button>
-
         <button
           onClick={() => {
             setApis("dash");
@@ -89,6 +88,32 @@ const SideBar = () => {
             <polyline points="11 12 12 12 12 16 13 16" />
           </svg>
           <p className="Sidebar__P">Info</p>
+        </button>
+        <button
+          onClick={() => {
+            setApis("mail");
+          }}
+          className={`SideBar__Container--Boton ${
+            apis === "mail" && "Sidebar__Container-bg"
+          }`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="icon icon-tabler icon-tabler-mail"
+            width="30"
+            height="30"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="#000000"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+          <p className="Sidebar__P">MailChimp</p>
         </button>
       </div>
     </div>

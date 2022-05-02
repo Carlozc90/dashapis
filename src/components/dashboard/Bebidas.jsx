@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { axiosBebidaCategoriaRes } from "../helpers/Axios";
-import useApis from "../hooks/useApis";
 import Image from "next/image";
+import { axiosBebidaCategoriaRes } from "../../helpers/Axios";
+import useApis from "../../hooks/useApis";
 
 const Bebidas = () => {
   const { handleBebida, bebidaRes } = useApis();

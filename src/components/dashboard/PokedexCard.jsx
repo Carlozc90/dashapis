@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { pokemonTypeColor } from "../data/base";
+import { pokemonTypeColor } from "../../data/base";
 const PokedexCard = ({ items }) => {
   console.log(items);
   const bgCarta = (tipo, count) => {

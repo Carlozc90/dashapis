@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { monedas } from "../data/base";
-import { axiosCryptoConsulta } from "../helpers/Axios";
-import useApis from "../hooks/useApis";
-import useCryptoMoneda from "../hooks/useCryptoMoneda";
+import { monedas } from "../../data/base";
+import { axiosCryptoConsulta } from "../../helpers/Axios";
+import useApis from "../../hooks/useApis";
+import useCryptoMoneda from "../../hooks/useCryptoMoneda";
 import CryptoResultado from "./CryptoResultado";
 
 const Crypto = () => {

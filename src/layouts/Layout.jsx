@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
-import Modal from "../components/Modal";
+import Modal from "../components/home/Modal";
 import Header from "./Header";
 import SideBar from "./SideBar";
 

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { axiosPokemonesRes, axiosPokemonRes } from "../helpers/Axios";
+import { axiosPokemonRes, axiosPokemonesRes } from "../../helpers/Axios";
 import PokedexCard from "./PokedexCard";
 const Pokedex = () => {
   const [pokemon, setPokemon] = useState("");
